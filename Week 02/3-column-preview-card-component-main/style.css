@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+html,
+body {
+  margin: 0;
+}
+
+.main {
+  margin: 50px auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.one,
+.two,
+.three {
+  padding: 25px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.one {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 5px 0 0;
+}
+
+.two {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.three {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 5px 5px;
+}
+
+.first {
+  background: url("images/icon-sedans.svg");
+}
+
+.second {
+  background: url("images/icon-suvs.svg");
+}
+
+.third {
+  background: url("images/icon-luxury.svg");
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.vehicle-logo {
+  background-repeat: no-repeat;
+  height: 3rem;
+  max-width: 100%;
+  display: block;
+}
+
+.vehicle-type {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.vehicle-info,
+button {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+}
+
+.vehicle-info {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+button {
+  border: none;
+  width: 125px;
+  padding: 10px 15px;
+  border-radius: 1.5rem;
+}
+
+.orange {
+  color: hsl(31, 77%, 52%);
+}
+
+.blue {
+  color: hsl(184, 100%, 22%);
+}
+
+.green {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (min-width: 376px) {
+  .main {
+    margin: 50px auto;
+    flex-direction: row;
+    width: 68%;
+  }
+
+  .one,
+  .two,
+  .three {
+    height: 550px;
+  } 
+  .one {
+    border-radius: 5px 0 0 5px;
+  }
+
+  .three {
+    border-radius: 0 5px 5px 0;
+  }
+
+  .desc {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 250px;
+  }
+}
